@@ -6,8 +6,8 @@ const server = http.createServer(async (req, res) => {
 
     // const response = await fetch("https://dummyjson.com/products")
     // const data = await response.json();
-    
-    const location = "India";
+
+    const location = "Ghaziabad";
     const response = await axios.get(`https://api.github.com/search/users?q=location:${location}`);
     const users = response.data.items; 
 
